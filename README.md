@@ -1,4 +1,4 @@
-# [ICML2024] <br> GeminiFusion for Multimodal Semantic Segementation on DeLiVER Dataset
+# [ICML2024] GeminiFusion <br> for Multimodal Semantic Segementation on DeLiVER Dataset
 
 This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](Link)".
 
