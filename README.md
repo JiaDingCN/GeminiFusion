@@ -1,8 +1,10 @@
 # [ICML2024] GeminiFusion <br> for Multimodal 3D Object Detection on KITTI Dataset
 
-This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](Link)".
+This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](https://arxiv.org/pdf/2406.01210)".
 
 Authors: Ding Jia, Jianyuan Guo, Kai Han, Han Wu, Chao Zhang, Chang Xu, Xinghao Chen
+
+![geminifusion_framework](resources/geminifusion_framework.png)
 
 ----------------------------
 
@@ -92,3 +94,6 @@ If you find this work useful for your research, please cite our paper:
       primaryClass={cs.CV}
 }
 ```
+
+### Acknowledgement
+Part of our code is based on the open-source project [MMDetection3D](https://github.com/open-mmlab/mmdetection3d).
