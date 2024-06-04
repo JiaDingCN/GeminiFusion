@@ -127,13 +127,13 @@ CUDA_VISIBLE_DEVICES=0,1,2 python -m torch.distributed.launch --nproc_per_node=3
 
 If you find this work useful for your research, please cite our paper:
 
-<!-- ```
-@misc{rukhovich2023tr3d,
-  doi = {10.48550/ARXIV.2302.02858},
-  url = {https://arxiv.org/abs/2302.02858},
-  author = {Rukhovich, Danila and Vorontsova, Anna and Konushin, Anton},
-  title = {TR3D: Towards Real-Time Indoor 3D Object Detection},
-  publisher = {arXiv},
-  year = {2023}
+```
+@misc{jia2024geminifusion,
+      title={GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer}, 
+      author={Ding Jia and Jianyuan Guo and Kai Han and Han Wu and Chao Zhang and Chang Xu and Xinghao Chen},
+      year={2024},
+      eprint={2406.01210},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
-``` -->
+```
