@@ -1,4 +1,4 @@
-# [ICML2024]GeminiFusion for Multimodal Semantic Segementation on NYUDv2 & SUN RGBD Dataset
+# [ICML2024] GeminiFusion <br> for Multimodal Segementation on NYUDv2 & SUN RGBD Dataset
 
 This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](Link)".
 
