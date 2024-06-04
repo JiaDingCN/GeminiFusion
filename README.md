@@ -1,4 +1,4 @@
-# [ICML2024]GeminiFusion for Multimodal 3D Object Detection on KITTI Dataset
+# [ICML2024] GeminiFusion <br> for Multimodal 3D Object Detection on KITTI Dataset
 
 This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](Link)".
 
