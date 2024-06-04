@@ -1,8 +1,10 @@
 # [ICML2024] GeminiFusion <br> for Multimodal Segementation on DeLiVER Dataset
 
-This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](Link)".
+This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](https://arxiv.org/pdf/2406.01210)".
 
 Authors: Ding Jia, Jianyuan Guo, Kai Han, Han Wu, Chao Zhang, Chang Xu, Xinghao Chen
+
+![geminifusion_framework](figs/geminifusion_framework.png)
 
 ----------------------------
 
