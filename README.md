@@ -1,4 +1,4 @@
-# [ICML2024]GeminiFusion for Multimodal Semantic Segementation on DeLiVER Dataset
+# [ICML2024] GeminiFusion <br> for Multimodal Segementation on DeLiVER Dataset
 
 This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](Link)".
 
@@ -101,3 +101,7 @@ If you find this work useful for your research, please cite our paper:
       primaryClass={cs.CV}
 }
 ```
+
+
+### Acknowledgement
+Part of our code is based on the open-source project [CMNeXt](https://github.com/jamycheung/DELIVER).
