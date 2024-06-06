@@ -5,15 +5,22 @@
 </div>
 
 <p align="center">
+
 <a href="https://arxiv.org/pdf/2406.01210">
     <img src="https://img.shields.io/badge/arXiv-2406.01210-green" /></a>
 <a href="https://pytorch.org/">
     <img src="https://img.shields.io/badge/Framework-PyTorch-orange.svg" /></a>
 <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" /></a>
+
 </p>
 
-<!-- todo:加上paperwithcode的icon -->
+	
+	
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geminifusion-efficient-pixel-wise-multimodal/semantic-segmentation-on-deliver-1)](https://paperswithcode.com/sota/semantic-segmentation-on-deliver-1?p=geminifusion-efficient-pixel-wise-multimodal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geminifusion-efficient-pixel-wise-multimodal/semantic-segmentation-on-nyu-depth-v2)](https://paperswithcode.com/sota/semantic-segmentation-on-nyu-depth-v2?p=geminifusion-efficient-pixel-wise-multimodal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geminifusion-efficient-pixel-wise-multimodal/semantic-segmentation-on-sun-rgbd)](https://paperswithcode.com/sota/semantic-segmentation-on-sun-rgbd?p=geminifusion-efficient-pixel-wise-multimodal)
+
 
 This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](https://arxiv.org/pdf/2406.01210)".
 
@@ -121,7 +128,7 @@ CUDA_VISIBLE_DEVICES=0,1,2 python -m torch.distributed.launch --nproc_per_node=3
 CUDA_VISIBLE_DEVICES=0,1,2 python -m torch.distributed.launch --nproc_per_node=3  --use_env main.py --backbone swin_large_window12 --dataset nyudv2 -c nyudv2_swin_large_window12 --dpr 0.2
 
 # swin-large-384+FineTune from SUN 300eps
-# swin-large-384.pth.tar should be downloaded by the link below or trained by yourself
+# swin-large-384.pth.tar should be downloaded by our link or trained by yourself
 CUDA_VISIBLE_DEVICES=0,1,2 python -m torch.distributed.launch --nproc_per_node=3  --use_env main.py --backbone swin_large_window12 --dataset nyudv2 -c rerun_54.8_swin_large_window12_finetune_dpr0.15_100+200+100 \
  --dpr 0.15 --num-epoch 100 200 100 --is_pretrain_finetune --resume ./swin-large-384.pth.tar
 ```
