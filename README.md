@@ -1,12 +1,33 @@
-# [ICML2024] GeminiFusion <br> for Multimodal Segementation on DeLiVER Dataset
+<div align="center"> 
+
+##  GeminiFusion for Multimodal Segementation on DeLiVER Dataset (ICML 2024)
+
+</div>
+
+<p align="center">
+
+<a href="https://arxiv.org/pdf/2406.01210">
+    <img src="https://img.shields.io/badge/arXiv-2406.01210-green" /></a>
+<a href="https://pytorch.org/">
+    <img src="https://img.shields.io/badge/Framework-PyTorch-orange.svg" /></a>
+<a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" /></a>
+
+</p>
+
+	
+	
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geminifusion-efficient-pixel-wise-multimodal/semantic-segmentation-on-deliver-1)](https://paperswithcode.com/sota/semantic-segmentation-on-deliver-1?p=geminifusion-efficient-pixel-wise-multimodal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geminifusion-efficient-pixel-wise-multimodal/semantic-segmentation-on-nyu-depth-v2)](https://paperswithcode.com/sota/semantic-segmentation-on-nyu-depth-v2?p=geminifusion-efficient-pixel-wise-multimodal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geminifusion-efficient-pixel-wise-multimodal/semantic-segmentation-on-sun-rgbd)](https://paperswithcode.com/sota/semantic-segmentation-on-sun-rgbd?p=geminifusion-efficient-pixel-wise-multimodal)
 
 This is the official implementation of our paper "[GeminiFusion: Efficient Pixel-wise Multimodal Fusion for Vision Transformer](https://arxiv.org/pdf/2406.01210)".
 
 Authors: Ding Jia, Jianyuan Guo, Kai Han, Han Wu, Chao Zhang, Chang Xu, Xinghao Chen
 
-![geminifusion_framework](figs/geminifusion_framework.png)
 
-----------------------------
+
+
 
 ## Code List
 
@@ -17,7 +38,24 @@ We have applied our GeminiFusion to different tasks and datasets:
   * (This branch)[DeLiVER dataset](https://github.com/JiaDingCN/GeminiFusion/tree/DeLiVER)
 * GeminiFusion for Multimodal 3D Object Detection
   * [KITTI dataset](https://github.com/JiaDingCN/GeminiFusion/tree/3d_object_detection_kitti)
-----------------
+
+## Introduction
+
+We propose GeminiFusion, a pixel-wise fusion approach that capitalizes on aligned cross-modal representations. GeminiFusion elegantly combines intra-modal and inter-modal attentions, dynamically integrating complementary information across modalities. We employ a layer-adaptive noise to adaptively control their interplay on a per-layer basis, thereby achieving a harmonized fusion process. Notably, GeminiFusion maintains linear complexity with respect to the number of input tokens, ensuring this multimodal framework operates with efficiency comparable to unimodal networks. Comprehensive evaluations demonstrate the superior performance of our GeminiFusion against leading-edge techniques.
+
+
+
+## Framework
+![geminifusion_framework](figs/geminifusion_framework.png)
+
+## Model Zoo                                           
+
+| Model | backbone|Modals| mIoU | Download |
+|:-------:|:--------:|:--------:|:-------:|:-------------------:|
+| GeminiFusion | MiT-B2|RGB+Depth| 66.4 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/DeLiVER/geminifusion_b2_deliver_rgbd.pth) &#124; [config](configs/deliver_rgbd_8cards_2e-4.yaml) |
+| GeminiFusion | MiT-B2|RGB+Event| 58.5 |  [model]() &#124; [config](configs/deliver_rgbe_8cards_2e-4.yaml) |
+| GeminiFusion | MiT-B2|RGB+LiDAR| 58.6 |  [model]() &#124; [config](configs/deliver_rgbl_8cards_2e-4.yaml) |
+| GeminiFusion | MiT-B2|RGB+Depth+Event+LiDAR| 66.9 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/DeLiVER/geminifusion_b2_deliver_rgbdel.pth) &#124; [config](configs/deliver_rgbdel_8cards_2e-4.yaml) |
 
 ## Installation
 
@@ -28,13 +66,13 @@ Most of the `GeminiFusion`-related code locate in the following files:
 * [models/geminifusion.py](semseg/models/geminifusion.py)
 * [models/backbones/geminifusion_backbone.py](semseg/models/backbones/geminifusion_backbone.py)
 
-## Getting Started
+## Data
 
 **DeLiVER Dataset Prapare**
 
 Please follow [the offical data preparation instructions for DeLiVER](./README-DELIVER.md#data-folder-structure).
 
-**Training**
+## Train
 
 We use 8 GPUs to train the GeminiFusion.
 ```shell
@@ -57,7 +95,7 @@ python -m torch.distributed.launch --master_port 2225 --nproc_per_node=8 --use_e
 --drop_path_rate 0.2
 ```
 
-**Testing**
+## Test
 
 To evaluate the downloaded checkpoint, you may change the TEST:MODEL_PATH on the config.
 
@@ -79,17 +117,10 @@ CUDA_VISIBLE_DEVICES=0 python tools/val_mm.py --cfg configs/deliver_rgbdel_8card
 
 
 
-## Model Zoo                                           
-
-| Model | backbone|Modals| mIoU | Download |
-|:-------:|:--------:|:--------:|:-------:|:-------------------:|
-| GeminiFusion | MiT-B2|RGB+Depth| 66.4 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/DeLiVER/geminifusion_b2_deliver_rgbd.pth) &#124; [config](configs/deliver_rgbd_8cards_2e-4.yaml) |
-| GeminiFusion | MiT-B2|RGB+Event| 58.5 |  [model]() &#124; [config](configs/deliver_rgbe_8cards_2e-4.yaml) |
-| GeminiFusion | MiT-B2|RGB+LiDAR| 58.6 |  [model]() &#124; [config](configs/deliver_rgbl_8cards_2e-4.yaml) |
-| GeminiFusion | MiT-B2|RGB+Depth+Event+LiDAR| 66.9 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/DeLiVER/geminifusion_b2_deliver_rgbdel.pth) &#124; [config](configs/deliver_rgbdel_8cards_2e-4.yaml) |
 
 
-### Citation
+
+## Citation
 
 If you find this work useful for your research, please cite our paper:
 
@@ -105,5 +136,5 @@ If you find this work useful for your research, please cite our paper:
 ```
 
 
-### Acknowledgement
+## Acknowledgement
 Part of our code is based on the open-source project [CMNeXt](https://github.com/jamycheung/DELIVER).
