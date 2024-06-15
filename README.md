@@ -56,22 +56,22 @@ We propose GeminiFusion, a pixel-wise fusion approach that capitalizes on aligne
 
 | Model | backbone| mIoU | Download |
 |:-------:|:--------:|:-------:|:-------------------:|
-| GeminiFusion | MiT-B3| 56.8 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/NYUDv2/mit-b3.pth.tar)  |
-| GeminiFusion | MiT-B5| 57.7 |  [model]()  |
-| GeminiFusion | swin_tiny| 52.2 |  [model]()  |
-| GeminiFusion | swin-small| 55.0 |  [model]()  |
-| GeminiFusion | swin-large-224| 58.8 |  [model]()  |
-| GeminiFusion | swin-large-384| 60.2 |  [model]()  |
-| GeminiFusion | swin-large-384 +FineTune from SUN 300eps| 60.9 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/NYUDv2/finetune-swin-large-384.pth.tar)  |
+| GeminiFusion | MiT-B3| 56.8 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/NYUDv2_V2/mit-b3.pth.tar)  |
+| GeminiFusion | MiT-B5| 57.7 |  model  |
+| GeminiFusion | swin_tiny| 52.2 |  model  |
+| GeminiFusion | swin-small| 55.0 |  model  |
+| GeminiFusion | swin-large-224| 58.8 |  model  |
+| GeminiFusion | swin-large-384| 60.2 |  model  |
+| GeminiFusion | swin-large-384 +FineTune from SUN 300eps| 60.9 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/NYUDv2_V2/finetune-swin-large-384.pth.tar)  |
 
 ### SUN RGBD dataset
 
 | Model | backbone| mIoU | Download |
 |:-------:|:--------:|:-------:|:-------------------:|
-| GeminiFusion | MiT-B3| 52.7 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/SUN/mit-b3.pth.tar)  |
-| GeminiFusion | MiT-B5| 53.3 |  [model]()  |
-| GeminiFusion | swin_tiny| 50.2 |  [model]()  |
-| GeminiFusion | swin-large-384| 54.8 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/SUN/swin-large-384.pth.tar)  |
+| GeminiFusion | MiT-B3| 52.7 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/SUN_v2/mit-b3.pth.tar)  |
+| GeminiFusion | MiT-B5| 53.3 |  model  |
+| GeminiFusion | swin_tiny| 50.2 |  model  |
+| GeminiFusion | swin-large-384| 54.8 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/SUN_v2/swin-large-384.pth.tar)  |
 
 
 
