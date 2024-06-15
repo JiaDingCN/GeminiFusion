@@ -53,8 +53,8 @@ We propose GeminiFusion, a pixel-wise fusion approach that capitalizes on aligne
 | Model | backbone|Modals| mIoU | Download |
 |:-------:|:--------:|:--------:|:-------:|:-------------------:|
 | GeminiFusion | MiT-B2|RGB+Depth| 66.4 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/DeLiVER_V2/geminifusion_b2_deliver_rgbd.pth) &#124; [config](configs/deliver_rgbd_8cards_2e-4.yaml) |
-| GeminiFusion | MiT-B2|RGB+Event| 58.5 |  [model]() &#124; [config](configs/deliver_rgbe_8cards_2e-4.yaml) |
-| GeminiFusion | MiT-B2|RGB+LiDAR| 58.6 |  [model]() &#124; [config](configs/deliver_rgbl_8cards_2e-4.yaml) |
+| GeminiFusion | MiT-B2|RGB+Event| 58.5 | model &#124; [config](configs/deliver_rgbe_8cards_2e-4.yaml) |
+| GeminiFusion | MiT-B2|RGB+LiDAR| 58.6 |  model &#124; [config](configs/deliver_rgbl_8cards_2e-4.yaml) |
 | GeminiFusion | MiT-B2|RGB+Depth+Event+LiDAR| 66.9 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/DeLiVER_V2/geminifusion_b2_deliver_rgbdel.pth) &#124; [config](configs/deliver_rgbdel_8cards_2e-4.yaml) |
 
 ## Installation
