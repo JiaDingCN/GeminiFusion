@@ -58,7 +58,7 @@ We used the results of the last epoch for all experiments.(The numbers are from 
 | Model |Param| Easy | Moderate | Hard | Download |
 |:-------:|:--------:|:--------:|:-------:|:-------------------:|:--------:|
 | MVX-Net(Offical) | 33.8M|87.49| 77.04| 74.54 | [model](https://download.openmmlab.com/mmdetection3d/v1.1.0_models/mvxnet/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class-8963258a.pth) &#124; [log](https://download.openmmlab.com/mmdetection3d/v1.1.0_models/mvxnet/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class-20230424_132228.log) &#124; [config](configs/mvxnet/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class.py) |
-| MVX-Net + GeminiFusion |34.8M|  88.49| 77.36| 74.61 | [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/CheckPoint_and_Log/geminifusion_mvxnet.pth) &#124; [log](https://github.com/JiaDingCN/GeminiFusion/releases/download/CheckPoint_and_Log/geminifusion_mvxnet_training.log) &#124; [config](configs/geminifusion_mvxnet/geminifusion_mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class.py) |
+| MVX-Net + GeminiFusion |34.8M|  88.49| 77.36| 74.61 | [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/MVXNET/geminifusion_mvxnet.pth) &#124; [log](https://github.com/JiaDingCN/GeminiFusion/releases/download/MVXNET/geminifusion_mvxnet_training.log) &#124; [config](configs/geminifusion_mvxnet/geminifusion_mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class.py) |
 
 ### 3D AP R40(IoU=0.7) 
 
