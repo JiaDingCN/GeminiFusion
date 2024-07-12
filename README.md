@@ -57,7 +57,7 @@ We propose GeminiFusion, a pixel-wise fusion approach that capitalizes on aligne
 | Model | backbone| mIoU | Download |
 |:-------:|:--------:|:-------:|:-------------------:|
 | GeminiFusion | MiT-B3| 56.8 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/NYUDv2_V2/mit-b3.pth.tar)  |
-| GeminiFusion | MiT-B5| 57.7 |  model  |
+| GeminiFusion | MiT-B5| 57.7 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/NYUDv2_V2/mit_b5.pth.tar)  |
 | GeminiFusion | swin_tiny| 52.2 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/NYUDv2_V2/swin_tiny.pth.tar)  |
 | GeminiFusion | swin-small| 55.0 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/NYUDv2_V2/swin_small.pth.tar)  |
 | GeminiFusion | swin-large-224| 58.8 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/NYUDv2_V2/swin_large.pth.tar)  |
@@ -69,7 +69,7 @@ We propose GeminiFusion, a pixel-wise fusion approach that capitalizes on aligne
 | Model | backbone| mIoU | Download |
 |:-------:|:--------:|:-------:|:-------------------:|
 | GeminiFusion | MiT-B3| 52.7 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/SUN_v2/mit-b3.pth.tar)  |
-| GeminiFusion | MiT-B5| 53.3 |  model  |
+| GeminiFusion | MiT-B5| 53.3 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/SUN_v2/mit_b5.pth.tar)  |
 | GeminiFusion | swin_tiny| 50.2 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/SUN_v2/swin_tiny.pth.tar)  |
 | GeminiFusion | swin-large-384| 54.8 |  [model](https://github.com/JiaDingCN/GeminiFusion/releases/download/SUN_v2/swin-large-384.pth.tar)  |
 
