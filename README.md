@@ -129,7 +129,7 @@ CUDA_VISIBLE_DEVICES=0,1,2 python -m torch.distributed.launch --nproc_per_node=3
 
 # swin-large-384+FineTune from SUN 300eps
 # swin-large-384.pth.tar should be downloaded by our link or trained by yourself
-CUDA_VISIBLE_DEVICES=0,1,2 python -m torch.distributed.launch --nproc_per_node=3  --use_env main.py --backbone swin_large_window12 --dataset nyudv2 -c rerun_54.8_swin_large_window12_finetune_dpr0.15_100+200+100 \
+CUDA_VISIBLE_DEVICES=0,1,2 python -m torch.distributed.launch --nproc_per_node=3  --use_env main.py --backbone swin_large_window12 --dataset nyudv2 -c swin_large_window12_finetune_dpr0.15_100+200+100 \
  --dpr 0.15 --num-epoch 100 200 100 --is_pretrain_finetune --resume ./swin-large-384.pth.tar
 ```
 
